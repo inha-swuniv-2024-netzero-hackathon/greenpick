@@ -18,9 +18,6 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
         entities: ['dist/**/entities/*.js'],
         autoLoadEntities: true,
         synchronize: true,
-        ssl: {
-          rejectUnauthorized: false,
-        },
         namingStrategy: new SnakeNamingStrategy(),
       }),
       inject: [ConfigService],

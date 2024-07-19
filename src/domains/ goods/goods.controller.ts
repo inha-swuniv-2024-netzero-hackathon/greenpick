@@ -11,6 +11,7 @@ export class GoodsController {
 
   @Post('/')
   async createGoods(@Body() createGoodsDto: CreateGoodsDto): Promise<Goods> {
+    console.log(createGoodsDto);
     return await this.goodsService.createGoods(createGoodsDto);
   }
 

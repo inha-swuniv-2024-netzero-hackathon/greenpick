@@ -21,8 +21,5 @@ export class Goods {
   greenScore: number;
 
   @Column()
-  registerDate: string;
-
-  @Column()
   deliveryFee: number;
 }
