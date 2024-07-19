@@ -21,5 +21,11 @@ export class Goods {
   greenScore: number;
 
   @Column()
-  deliveryFee: number;
+  deliveryDate: number;
+
+  @Column()
+  reviewCount: number;
+
+  @Column()
+  rate: number;
 }
