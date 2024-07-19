@@ -9,6 +9,9 @@ export class Goods {
   imageUrl: string;
 
   @Column()
+  name: string;
+
+  @Column()
   price: number;
 
   @Column()
