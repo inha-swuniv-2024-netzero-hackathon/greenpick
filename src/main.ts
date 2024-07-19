@@ -19,20 +19,10 @@ async function bootstrap() {
   );
   app.useGlobalFilters(new AllExceptionsFilter());
   const config = new DocumentBuilder()
-    .setTitle('Nest Boilerplate')
+    .setTitle('GreenPick Backend')
     .setDescription('API Document')
     .setVersion('1.0')
-    .addBearerAuth(
-      {
-        type: 'http',
-        scheme: 'bearer',
-        bearerFormat: 'JWT',
-        name: 'JWT',
-        description: 'Enter JWT token',
-        in: 'header',
-      },
-      'swagger-test-auth', // This name here is important for matching up with @ApiBearerAuth() in your controller!
-    )
+    .addTag('Goods', '제품 관련 기능')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/api/docs', app, document);
