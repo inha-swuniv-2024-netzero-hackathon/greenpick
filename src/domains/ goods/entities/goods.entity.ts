@@ -6,6 +6,9 @@ export class Goods {
   id: number;
 
   @Column()
+  imageUrl: string;
+
+  @Column()
   price: number;
 
   @Column()
