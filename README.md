@@ -1,7 +1,7 @@
 
 ## Description
 
-NestJS 보일러플레이트 (템플릿) 입니다.
+NestJS
 
 기본 옵션
 
